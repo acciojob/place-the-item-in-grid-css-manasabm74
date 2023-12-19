@@ -5,16 +5,29 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
-		.holder{
+		body{
+			margin:0;
 			display:flex;
 			justify-content:center;
-			flex-wrap:flex;
-			
+			align-item:center;
+			height:100vh;
 		}
+		.holder{
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+			grid-template-rows:repeat(2,1fr);
+			width:200px;
+			height:200px;
+			gap:5px;
+		}
+			
+			
+		
 		.item{
-			flex:0,0,auto;
-			margin:10px;
-			box-sizing:border-box;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			border:1px solid #333;
 		}
 	</style>
 </head>
